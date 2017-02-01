@@ -36,6 +36,7 @@ isPointEmpty worldMap state = let x = safeGet i j worldMap
   where (i,j) = getPos state
 
 -- all Points in between are empty
+-- Need a way to generalize that a line between two points is empty
 isPathEmpty :: WorldMap -> State -> State -> Bool
 isPathEmpty world (TwoD (x,y))    (TwoD (x',y')) = isPathEmpty world (FourD (x,y) (0,0)) (FourD (x',y') (x' - x, y' - y))
 isPathEmpty world (FourD (x,y) _) (FourD (x',y') (dx',dy'))

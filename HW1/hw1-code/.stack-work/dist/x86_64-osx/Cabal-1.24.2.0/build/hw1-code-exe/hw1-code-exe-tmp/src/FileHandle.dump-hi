@@ -1,0 +1,170 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-31 20:47:05.017151 UTC
+
+interface main@main:FileHandle 8001
+  interface hash: f3fcc6552897e3416949915d219adc7b
+  ABI hash: a94a89878213552ee7d604ad71ce8d0a
+  export-list hash: d91048a63d5ac4adb9a1aca48829fd9e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c4e6c57fddbe1d8308330ba9378e7853
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  FileHandle.displayPathOnMap
+  FileHandle.fileToMap
+  FileHandle.mapToFile
+module dependencies: MyTypes
+package dependencies: PSQueue-1.1@PSQueue-1.1-DNpDWrWkOL4BwO0e9gII0d
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 loop-0.3.0@loop-0.3.0-98VH1UqsOHy2KxBxA55ICY
+                      matrix-0.3.5.0@matrix-0.3.5.0-Ai5MbZhiOOC3qmPfUuhoAV
+                      mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      parsec-3.1.11@parsec-3.1.11-37j7M1YEHqtEooY7BpJdri
+                      pgm-0.1.4@pgm-0.1.4-JnQ1IdsQ5XPISkZjx2nGHv
+                      primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa
+                      text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa:Control.Monad.Primitive
+                         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-9Yh8rJoh8fO2JMLWffT3Qs:Data.Text.Lazy
+                         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector
+import  -/  PSQueue-1.1@PSQueue-1.1-DNpDWrWkOL4BwO0e9gII0d:Data.PSQueue a3e2a49a00e5a52ce02e05b59da6fdf6
+import  -/  array-0.5.1.1@array-0.5.1.1:Data.Array.Base cebd6cb9c4069796f65ee2b1e63ddb08
+import  -/  array-0.5.1.1@array-0.5.1.1:Data.Array.Unboxed 075e807bcd35683192a22e3e3cbc8bcc
+import  -/  base-4.9.0.0:Data.Either bd9f099b82d4ed2d98c56d7144ac6957
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Word 34db1dae76cf3db02c16aed2b8427443
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:GHC.Word 0e53a754f84afac56f06f53d52c53615
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:System.IO ad985d7a3fc986e9b9c610fb344d9106
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Strict 48e097497655818e164c2bb81a1d7b2d
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+import  -/  MyTypes 5dd4d10ab2d751af6c5a0b862a753a79
+  exports: 195dbdb599dc4b5dff9d66057476b6f7
+  FourD 9a778adf3e54466e7fc19fbd9ad4c990
+  Path 88cd4876bfb2c7505ce2d2bb29487509
+  State 19431b7fdc9240c8026fc518c20edea2
+  TwoD e7c92df8fb128b2b003417044d077c95
+  WorldMap 5e25b2c24ca678d4d03236624112845e
+  getPos c404ce1bed2c41129c15fab9e07d6c57
+import  -/  matrix-0.3.5.0@matrix-0.3.5.0-Ai5MbZhiOOC3qmPfUuhoAV:Data.Matrix a687e632fe85518f4a0d171926d72f1c
+import  -/  pgm-0.1.4@pgm-0.1.4-JnQ1IdsQ5XPISkZjx2nGHv:Graphics.Pgm e93dc3453b181e0ff58818a1564e48e1
+da77c9882a3bcda53032156c47bcd73a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   FileHandle.$trModule2
+                   FileHandle.$trModule1) -}
+8f94332ef5fedbdabbec14102220572b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "FileHandle"#) -}
+96cb08678e32699d1b24726e39a66fc2
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+5689586e0e61719a1bcbaf810ba44fac
+  $wgo ::
+    [MyTypes.State]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector GHC.Types.Int
+    -> (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Int#,
+          GHC.Prim.Int#, Data.Vector.Vector GHC.Types.Int #)
+  {- Arity: 7,
+     Strictness: <S,1*U><L,U><L,U><L,U><L,U><L,U><L,U(U,U,U)>,
+     Inline: [0] -}
+192696798dc1dc19e4e94bdc04cd39ed
+  displayPathOnMap ::
+    MyTypes.WorldMap -> MyTypes.Path -> MyTypes.WorldMap
+  {- Arity: 2, Strictness: <S,1*U(U,U,U,U,U,U(U,U,U))><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: MyTypes.WorldMap) (w1 :: MyTypes.Path) ->
+                 case w of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case FileHandle.$wgo
+                        w1
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6 of ww7 { (#,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ->
+                 Data.Matrix.M @ GHC.Types.Int ww8 ww9 ww10 ww11 ww12 ww13 } }) -}
+36708ce489c1e629fda7bae79cdfd8c2
+  fileToMap :: GHC.Base.String -> GHC.Types.IO MyTypes.WorldMap
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileHandle.fileToMap1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Matrix.Matrix GHC.Types.Int>_R)) -}
+9631f56b12ec57f72b4182ff664b5a34
+  fileToMap1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Matrix.Matrix GHC.Types.Int #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+514f97d4fa1abdca93744bf9097a82fc
+  mapToFile :: GHC.Base.String -> MyTypes.WorldMap -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,U><L,1*U(U,U,U,U,U,U(U,A,U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileHandle.mapToFile1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <MyTypes.WorldMap>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+bfd8a7bb902a193a93d6d16ba03107e7
+  mapToFile1 ::
+    GHC.Base.String
+    -> MyTypes.WorldMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U><L,1*U(U,U,U,U,U,U(U,A,U))><S,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -20,6 +20,9 @@ library
                      , PSQueue
                      , containers
                      , matrix
+                     , array
+                     , pgm
+                     , timeit
   default-language:    Haskell2010
 
 executable hw1-code-exe
@@ -31,6 +34,9 @@ executable hw1-code-exe
                      , containers
                      , matrix
                      , PSQueue
+                     , pgm
+                     , array
+                     , timeit
   default-language:    Haskell2010
 
 test-suite hw1-code-test

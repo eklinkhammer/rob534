@@ -1,0 +1,464 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-31 20:47:02.056119 UTC
+
+interface hw1-code-0.1.0.0-8aYr2pHdeuo3H0LfJWJHED:MyTypes 8001
+  interface hash: f72ae6b72bd2235017ed2a418ebca9d7
+  ABI hash: 26368e049ef499abf6515d2cf3fe8507
+  export-list hash: b7a279eeb022bf69ab9e5c4b3a4b82c7
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  MyTypes.getPos
+  MyTypes.infinity
+  MyTypes.posToState2D
+  MyTypes.posToState4D
+  MyTypes.AStar{MyTypes.AStar}
+  MyTypes.ClosedSet
+  MyTypes.DistanceFromStart
+  MyTypes.DistanceToGoal
+  MyTypes.Epsilon
+  MyTypes.GScore
+  MyTypes.Goal
+  MyTypes.NumNodesExpanded
+  MyTypes.OpenSet
+  MyTypes.Path
+  MyTypes.Pos
+  MyTypes.Previous
+  MyTypes.Start
+  MyTypes.State{MyTypes.FourD MyTypes.TwoD}
+  MyTypes.Vel
+  MyTypes.WorldMap
+module dependencies:
+package dependencies: PSQueue-1.1@PSQueue-1.1-DNpDWrWkOL4BwO0e9gII0d
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 loop-0.3.0@loop-0.3.0-98VH1UqsOHy2KxBxA55ICY
+                      matrix-0.3.5.0@matrix-0.3.5.0-Ai5MbZhiOOC3qmPfUuhoAV
+                      primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa:Control.Monad.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector
+import  -/  PSQueue-1.1@PSQueue-1.1-DNpDWrWkOL4BwO0e9gII0d:Data.PSQueue a3e2a49a00e5a52ce02e05b59da6fdf6
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 8d095ad71634b5551ba5dc1307b7f9e5
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Strict 48e097497655818e164c2bb81a1d7b2d
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  matrix-0.3.5.0@matrix-0.3.5.0-Ai5MbZhiOOC3qmPfUuhoAV:Data.Matrix a687e632fe85518f4a0d171926d72f1c
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fEqState :: GHC.Classes.Eq MyTypes.State
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ MyTypes.State MyTypes.$fEqState_$c== MyTypes.$fEqState_$c/= -}
+9766b51a48e398194b794f4d1645d9af
+  $fEqState1 :: GHC.Types.Bool
+  {- Strictness: x -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fEqState_$c/= :: MyTypes.State -> MyTypes.State -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: MyTypes.State) (y :: MyTypes.State) ->
+                 GHC.Classes.not (MyTypes.$fEqState_$c== x y)) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fEqState_$c== :: MyTypes.State -> MyTypes.State -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: MyTypes.State) (ds1 :: MyTypes.State) ->
+                 case ds of wild {
+                   MyTypes.TwoD pos1
+                   -> case ds1 of wild1 {
+                        MyTypes.TwoD pos2
+                        -> case pos1 of ww { (,) ww1 ww2 ->
+                           case pos2 of ww3 { (,) ww4 ww5 ->
+                           case ww1 of wild2 { GHC.Types.I# x ->
+                           case ww4 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# x y) of wild4 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True -> GHC.Classes.eqInt ww2 ww5 } } } } }
+                        MyTypes.FourD ipv ipv1 -> MyTypes.$fEqState1 }
+                   MyTypes.FourD pos1 vel1
+                   -> case ds1 of wild1 {
+                        MyTypes.TwoD ipv -> MyTypes.$fEqState1
+                        MyTypes.FourD pos2 vel2
+                        -> case pos1 of ww { (,) ww1 ww2 ->
+                           case pos2 of ww3 { (,) ww4 ww5 ->
+                           case ww1 of wild2 { GHC.Types.I# x ->
+                           case ww4 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# x y) of wild4 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> case ww2 of wild5 { GHC.Types.I# x1 ->
+                                case ww5 of wild6 { GHC.Types.I# y1 ->
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# x1 y1) of wild7 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True
+                                  -> case vel1 of ww7 { (,) ww8 ww9 ->
+                                     case vel2 of ww10 { (,) ww11 ww12 ->
+                                     case ww8 of wild8 { GHC.Types.I# x2 ->
+                                     case ww11 of wild9 { GHC.Types.I# y2 ->
+                                     case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# x2 y2) of wild10 {
+                                       GHC.Types.False -> GHC.Types.False
+                                       GHC.Types.True
+                                       -> GHC.Classes.eqInt
+                                            ww9
+                                            ww12 } } } } } } } } } } } } } } }) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fOrdState :: GHC.Classes.Ord MyTypes.State
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ MyTypes.State
+                  MyTypes.$fEqState
+                  MyTypes.$fOrdState_$ccompare
+                  MyTypes.$fOrdState_$c<
+                  MyTypes.$fOrdState_$c<=
+                  MyTypes.$fOrdState_$c>
+                  MyTypes.$fOrdState_$c>=
+                  MyTypes.$fOrdState_$cmax
+                  MyTypes.$fOrdState_$cmin -}
+112eb7fb899b71148bd756fbd4d4bec0
+  $fOrdState1 :: GHC.Types.Bool
+  {- Strictness: x -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fOrdState_$c< :: MyTypes.State -> MyTypes.State -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: MyTypes.State) (y :: MyTypes.State) ->
+                 case MyTypes.$fEqState_$c== x y of wild {
+                   GHC.Types.False -> MyTypes.$fOrdState_$c<= x y
+                   GHC.Types.True -> GHC.Types.False }) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fOrdState_$c<= :: MyTypes.State -> MyTypes.State -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: MyTypes.State) (ds1 :: MyTypes.State) ->
+                 case ds of wild {
+                   MyTypes.TwoD p1
+                   -> case ds1 of wild1 {
+                        MyTypes.TwoD p2
+                        -> case p1 of ww { (,) ww1 ww2 ->
+                           case p2 of ww3 { (,) ww4 ww5 ->
+                           case ww1 of wild2 { GHC.Types.I# x# ->
+                           case ww4 of wild3 { GHC.Types.I# y# ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<# x# y#) of wild4 {
+                             GHC.Types.False
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# x# y#) of wild5 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True -> GHC.Classes.leInt ww2 ww5 }
+                             GHC.Types.True -> GHC.Types.True } } } } }
+                        MyTypes.FourD ipv ipv1 -> MyTypes.$fOrdState1 }
+                   MyTypes.FourD p1 v1
+                   -> case ds1 of wild1 {
+                        MyTypes.TwoD ipv -> MyTypes.$fOrdState1
+                        MyTypes.FourD p2 v2
+                        -> case p1 of ww { (,) ww1 ww2 ->
+                           case p2 of ww3 { (,) ww4 ww5 ->
+                           case ww1 of wild2 { GHC.Types.I# x ->
+                           case ww4 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# x y) of wild4 {
+                             GHC.Types.False
+                             -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# x y)
+                             GHC.Types.True
+                             -> case ww2 of wild5 { GHC.Types.I# x1 ->
+                                case ww5 of wild6 { GHC.Types.I# y1 ->
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# x1 y1) of wild7 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.<# x y) of wild8 {
+                                       GHC.Types.False
+                                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<=# x1 y1)
+                                       GHC.Types.True -> GHC.Types.True }
+                                  GHC.Types.True
+                                  -> case v1 of ww7 { (,) ww8 ww9 ->
+                                     case v2 of ww10 { (,) ww11 ww12 ->
+                                     case ww8 of wild8 { GHC.Types.I# x# ->
+                                     case ww11 of wild9 { GHC.Types.I# y# ->
+                                     case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.<# x# y#) of wild10 {
+                                       GHC.Types.False
+                                       -> case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.==# x# y#) of wild11 {
+                                            GHC.Types.False -> GHC.Types.False
+                                            GHC.Types.True -> GHC.Classes.leInt ww9 ww12 }
+                                       GHC.Types.True
+                                       -> GHC.Types.True } } } } } } } } } } } } } } }) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fOrdState_$c> :: MyTypes.State -> MyTypes.State -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (x :: MyTypes.State) (y :: MyTypes.State) ->
+                 case MyTypes.$fEqState_$c== x y of wild {
+                   GHC.Types.False
+                   -> case MyTypes.$fOrdState_$c<= x y of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False }
+                   GHC.Types.True -> GHC.Types.False }) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fOrdState_$c>= :: MyTypes.State -> MyTypes.State -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (x :: MyTypes.State) (y :: MyTypes.State) ->
+                 case MyTypes.$fEqState_$c== x y of wild {
+                   GHC.Types.False
+                   -> case MyTypes.$fOrdState_$c<= x y of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False }
+                   GHC.Types.True -> GHC.Types.True }) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fOrdState_$ccompare ::
+    MyTypes.State -> MyTypes.State -> GHC.Types.Ordering
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (eta :: MyTypes.State) (eta1 :: MyTypes.State) ->
+                 case MyTypes.$fEqState_$c== eta eta1 of wild {
+                   GHC.Types.False
+                   -> case MyTypes.$fOrdState_$c<= eta eta1 of wild1 {
+                        GHC.Types.False -> GHC.Types.GT GHC.Types.True -> GHC.Types.LT }
+                   GHC.Types.True -> GHC.Types.EQ }) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fOrdState_$cmax :: MyTypes.State -> MyTypes.State -> MyTypes.State
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: MyTypes.State) (y :: MyTypes.State) ->
+                 case MyTypes.$fOrdState_$c<= x y of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fOrdState_$cmin :: MyTypes.State -> MyTypes.State -> MyTypes.State
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: MyTypes.State) (y :: MyTypes.State) ->
+                 case MyTypes.$fOrdState_$c<= x y of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fShowState :: GHC.Show.Show MyTypes.State
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ MyTypes.State
+                  MyTypes.$fShowState_$cshowsPrec
+                  MyTypes.$fShowState_$cshow
+                  MyTypes.$fShowState_$cshowList -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fShowState1 :: MyTypes.State -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: MyTypes.State) (w1 :: GHC.Base.String) ->
+                 MyTypes.$w$cshowsPrec 0# w w1) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fShowState_$cshow :: MyTypes.State -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: MyTypes.State) ->
+                 MyTypes.$fShowState_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fShowState_$cshowList :: [MyTypes.State] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ MyTypes.State
+                   MyTypes.$fShowState1) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $fShowState_$cshowsPrec ::
+    GHC.Types.Int -> MyTypes.State -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: MyTypes.State)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 MyTypes.$w$cshowsPrec ww1 w1 w2 }) -}
+b6773dd33e70832a0a8bf95d0b7caeb5
+  $tc'AStar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15791508407440090682##
+                   10334529325057396965##
+                   MyTypes.$trModule
+                   MyTypes.$tc'AStar1) -}
+53d9171c377e1855fe7e86948c4df0ec
+  $tc'AStar1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'AStar"#) -}
+4ac689cbf40b67c2edf5c6bb45d7328e
+  $tc'FourD :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14591770687899069849##
+                   13495931281694528308##
+                   MyTypes.$trModule
+                   MyTypes.$tc'FourD1) -}
+87e06c1708afc75db11f8d3f3da9e498
+  $tc'FourD1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'FourD"#) -}
+e48fe8f2814fc24fa0b5f9068cc1cc0e
+  $tc'TwoD :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12463335313591518963##
+                   1234570268944902135##
+                   MyTypes.$trModule
+                   MyTypes.$tc'TwoD1) -}
+a876bf0283c7b0782f2a0b5b2c9be5f1
+  $tc'TwoD1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'TwoD"#) -}
+0de0ba31a63eca282dda28d2116edd08
+  $tcAStar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17465396343306464830##
+                   4279562544569629012##
+                   MyTypes.$trModule
+                   MyTypes.$tcAStar1) -}
+d65afcefa636af738488496a85020555
+  $tcAStar1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AStar"#) -}
+6d9fa4b77e6a598bdcdefbbb452b07ef
+  $tcState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10294486861982461724##
+                   2354610575832575761##
+                   MyTypes.$trModule
+                   MyTypes.$tcState1) -}
+172968d27e1109ade86f288fa93e332c
+  $tcState1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "State"#) -}
+5ce45a3f8a9bac9d075a27d0ac3539a7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   MyTypes.$trModule2
+                   MyTypes.$trModule1) -}
+ce23adce8e94d56e08a3f3979c07d0c3
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "MyTypes"#) -}
+faf42e2207e30801dfc9333876256beb
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "hw1-code-0.1.0.0-8aYr2pHdeuo3H0LfJWJHED"#) -}
+219fc6fc62da7b5e9c40aeda9508e6c0
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> MyTypes.State -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [0] -}
+131e0c954ba603882c45846efbdce420
+  data AStar
+    = AStar MyTypes.OpenSet
+            MyTypes.ClosedSet
+            MyTypes.Previous
+            MyTypes.GScore
+bafdaae5799f3b94c3596d9b6be19591
+  type ClosedSet = Data.Map.Base.Map MyTypes.State GHC.Types.Bool
+44ae55b171095b6ee457629477cf83ec
+  type DistanceFromStart = GHC.Types.Double
+2ddbb1f4e688190eca7673c6a9abc8ba
+  type DistanceToGoal = GHC.Types.Double
+2bf44ebb186a386d5d965f7e01a2b742
+  type Epsilon = GHC.Types.Double
+0ed9464ea087581fa42b3171da60bf30
+  type GScore =
+    Data.Map.Base.Map MyTypes.State MyTypes.DistanceFromStart
+a70ee73a111913a931a2cf0fb87786aa
+  type Goal = MyTypes.State
+c0d1c49c3beda591b09d7ac0375cc5e5
+  type NumNodesExpanded = GHC.Types.Int
+cefe925d5426f1879684144d824aba88
+  type OpenSet =
+    Data.PSQueue.PSQ MyTypes.State MyTypes.DistanceToGoal
+0461946d9312580f9079a814acb11627
+  type Path = [MyTypes.State]
+3075a346a62d94c2c2f5e5f71847c052
+  type Pos = (GHC.Types.Int, GHC.Types.Int)
+52ec15bbb1fb6e82ac7a42fe390c5331
+  type Previous = Data.Map.Base.Map MyTypes.State MyTypes.State
+8e51269e7450533f307db14dd1ae3c1f
+  type Start = MyTypes.State
+219fc6fc62da7b5e9c40aeda9508e6c0
+  data State = TwoD MyTypes.Pos | FourD MyTypes.Pos MyTypes.Vel
+8c208ae989590ba93b5694921b7b5add
+  type Vel = (GHC.Types.Int, GHC.Types.Int)
+c3b5614d6248fe8367df4baecfc7ef03
+  type WorldMap = Data.Matrix.Matrix GHC.Types.Int
+110121b6780fd77725215d47e32275c3
+  getPos :: MyTypes.State -> MyTypes.Pos
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: MyTypes.State) ->
+                 case ds of wild {
+                   MyTypes.TwoD pos -> pos MyTypes.FourD pos ds1 -> pos }) -}
+75e405b887d383987f8c40423368635c
+  infinity :: GHC.Types.Double
+  {- Unfolding: (case GHC.Prim./## 1.0## 0.0## of wild2 { DEFAULT ->
+                 GHC.Types.D# wild2 }) -}
+4f8eb3850ecc19eb27f3588d606531fc
+  posToState2D :: MyTypes.Pos -> MyTypes.State
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m1,
+     Unfolding: InlineRule (0, True, True) MyTypes.TwoD -}
+f90c1b089e7f11bff31ddfe67baa8aa7
+  posToState4D :: MyTypes.Pos -> MyTypes.State
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (pos :: MyTypes.Pos) ->
+                 MyTypes.FourD pos MyTypes.posToState4D1) -}
+bd3260c59f0f86ede922f7dc71c79fce
+  posToState4D1 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((MyTypes.posToState4D2, MyTypes.posToState4D2)) -}
+709780c5183d8e697cf5f55872722782
+  posToState4D2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+instance GHC.Classes.Eq [MyTypes.State] = MyTypes.$fEqState
+instance GHC.Classes.Ord [MyTypes.State] = MyTypes.$fOrdState
+instance GHC.Show.Show [MyTypes.State] = MyTypes.$fShowState
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

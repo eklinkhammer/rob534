@@ -1,0 +1,213 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-31 22:07:27.221435 UTC
+
+interface main@main:AStar 8001
+  interface hash: 499ec50355abea7de6e3abf34e0742db
+  ABI hash: 1e1551cbf7c53154c8a170fbbda49333
+  export-list hash: 053b3295818894f82092881785342247
+  orphan hash: d124ab58837c21b89804bae6febdc4b7
+  flag hash: c4e6c57fddbe1d8308330ba9378e7853
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  AStar.aStar
+module dependencies: MyTypes
+package dependencies: PSQueue-1.1@PSQueue-1.1-DNpDWrWkOL4BwO0e9gII0d
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 loop-0.3.0@loop-0.3.0-98VH1UqsOHy2KxBxA55ICY
+                      matrix-0.3.5.0@matrix-0.3.5.0-Ai5MbZhiOOC3qmPfUuhoAV
+                      primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa:Control.Monad.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-6uB77qGCxR6GPLxI2sqsX3:Data.Vector
+import  -/  PSQueue-1.1@PSQueue-1.1-DNpDWrWkOL4BwO0e9gII0d:Data.PSQueue a3e2a49a00e5a52ce02e05b59da6fdf6
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Float 469226b1bc53433e95d0167dec5d0312
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 8d095ad71634b5551ba5dc1307b7f9e5
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Strict 48e097497655818e164c2bb81a1d7b2d
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 62c0e736506aac47ef40569f5b82e19d
+import  -/  MyTypes 5dd4d10ab2d751af6c5a0b862a753a79
+  exports: 195dbdb599dc4b5dff9d66057476b6f7
+  AStar 210b133a975b4fa7e2cd414625ffcd17
+  AStar 9a2df2c9b4ce0092a8a7394dac9a84e2
+  DistanceFromStart fdf90e30246e77d46dd07d4681b962bc
+  DistanceToGoal 4e32f4d745ef67aea9c9b60663281e0e
+  Epsilon 3d980cda70cb7ab124c6a3d4041ec3e0
+  FourD 9a778adf3e54466e7fc19fbd9ad4c990
+  Goal fd5ed33bbfb94f17e12304ee88430fac
+  NumNodesExpanded 66b8375e727337b8469ed26a7ae13e5c
+  Path 88cd4876bfb2c7505ce2d2bb29487509
+  Pos e1a0ec3abc703630039ca42c5fee8d8a
+  Previous aaeed74138b81eb661d27a8b0eb2b50b
+  Start 25a0a7d2be5c8b5d88c09ebbff212475
+  State 19431b7fdc9240c8026fc518c20edea2
+  TwoD e7c92df8fb128b2b003417044d077c95
+  Vel 14ba84d9542b437f5f0d17d95f594199
+  WorldMap 5e25b2c24ca678d4d03236624112845e
+  getPos c404ce1bed2c41129c15fab9e07d6c57
+  infinity c37dc49e8a74d0ce0f784fc81184546e
+  posToState2D 883e7c4bab20a659351239dc741b7567
+import  -/  matrix-0.3.5.0@matrix-0.3.5.0-Ai5MbZhiOOC3qmPfUuhoAV:Data.Matrix a687e632fe85518f4a0d171926d72f1c
+221f4e7a3aaae6692e811ccc591ad5f8
+  $sfindWithDefault ::
+    a -> MyTypes.State -> Data.Map.Base.Map MyTypes.State a -> a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U> -}
+8d95980a937119295be7bdcd8109becb
+  $sinsert_$sgo4 ::
+    MyTypes.State
+    -> a1
+    -> Data.Map.Base.Map MyTypes.State a1
+    -> Data.Map.Base.Map MyTypes.State a1
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+02f242a3472e580e0f765ebe7e73304c
+  $slookup1 ::
+    MyTypes.State
+    -> Data.Map.Base.Map MyTypes.State a -> GHC.Base.Maybe a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+94fb5a6ad1447ace976cf080af58b0da
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module AStar.$trModule2 AStar.$trModule1) -}
+6a65275c2df740f94052796b7a6dc9d1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AStar"#) -}
+a329fca424f03e53e9477af0755756f3
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+64dd4e0a703d40f7a6678d5d3a79c4f0
+  $waStar ::
+    MyTypes.WorldMap
+    -> MyTypes.Start
+    -> MyTypes.Goal
+    -> MyTypes.Epsilon
+    -> (# MyTypes.Path, MyTypes.NumNodesExpanded #)
+  {- Arity: 4,
+     Strictness: <L,U(U,U,U,U,U,U(U,A,U))><L,U><L,U><L,U(U)>,
+     Inline: [0],
+     Unfolding: (\ (w :: MyTypes.WorldMap)
+                   (w1 :: MyTypes.Start)
+                   (w2 :: MyTypes.Goal)
+                   (w3 :: MyTypes.Epsilon) ->
+                 let {
+                   ds :: (MyTypes.Previous, MyTypes.NumNodesExpanded)
+                   = case AStar.$waStarHelper
+                            AStar.aStar2
+                            w3
+                            w
+                            w2
+                            (Data.PSQueue.Winner
+                               @ MyTypes.Start
+                               @ MyTypes.DistanceToGoal
+                               w1
+                               AStar.aStar1
+                               (Data.PSQueue.Start @ MyTypes.Start @ MyTypes.DistanceToGoal)
+                               w1)
+                            (Data.Map.Base.Tip @ MyTypes.State @ GHC.Types.Bool)
+                            (Data.Map.Base.Tip @ MyTypes.State @ MyTypes.State)
+                            (case w1 of dt { DEFAULT ->
+                             Data.Map.Base.Bin
+                               @ MyTypes.Start
+                               @ MyTypes.DistanceFromStart
+                               1#
+                               dt
+                               AStar.aStar1
+                               (Data.Map.Base.Tip @ MyTypes.Start @ MyTypes.DistanceFromStart)
+                               (Data.Map.Base.Tip
+                                  @ MyTypes.Start
+                                  @ MyTypes.DistanceFromStart) }) of ww { (#,#) ww1 ww2 ->
+                     case ww1 of wild { MyTypes.AStar ds1 ds2 previous ds3 ->
+                     (previous, ww2) } }
+                 } in
+                 (# case AStar.$wreconstructPath
+                           w1
+                           w2
+                           (case ds of ds1 { (,) previous nodes ->
+                            previous }) of ww { (#,#) ww1 ww2 ->
+                    GHC.List.reverse1
+                      @ MyTypes.State
+                      (GHC.Types.: @ MyTypes.State ww1 ww2)
+                      (GHC.Types.[] @ MyTypes.State) },
+                    case ds of ds1 { (,) previous nodes -> nodes } #)) -}
+3eb1c28eb17d1819eee392baab4314d3
+  $waStarHelper ::
+    MyTypes.NumNodesExpanded
+    -> MyTypes.Epsilon
+    -> MyTypes.WorldMap
+    -> MyTypes.Goal
+    -> MyTypes.OpenSet
+    -> MyTypes.ClosedSet
+    -> MyTypes.Previous
+    -> MyTypes.GScore
+    -> (# MyTypes.AStar, MyTypes.NumNodesExpanded #)
+  {- Arity: 8,
+     Strictness: <L,U(U)><L,U(U)><L,U(U,U,U,U,U,U(U,A,U))><L,U><S,1*U><L,U><L,U><L,U>,
+     Inline: [0] -}
+fc77b13c2667a2ce2c75689e01a92f78
+  $wreconstructPath ::
+    MyTypes.Start
+    -> MyTypes.State
+    -> MyTypes.Previous
+    -> (# MyTypes.State, [MyTypes.State] #)
+  {- Arity: 3, Strictness: <S,U><S,U><L,U>, Inline: [0] -}
+b0a3237ab9946085d6d3d3f24360d198
+  aStar ::
+    MyTypes.WorldMap
+    -> MyTypes.Start
+    -> MyTypes.Goal
+    -> MyTypes.Epsilon
+    -> (MyTypes.Path, MyTypes.NumNodesExpanded)
+  {- Arity: 4,
+     Strictness: <L,U(U,U,U,U,U,U(U,A,U))><L,U><L,U><L,U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: MyTypes.WorldMap)
+                   (w1 :: MyTypes.Start)
+                   (w2 :: MyTypes.Goal)
+                   (w3 :: MyTypes.Epsilon) ->
+                 case AStar.$waStar w w1 w2 w3 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+b1116ac9162ea34c05bfd47a81e61bd5
+  aStar1 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.0##) -}
+0f21f990c9dec4401f95bb36f5bb3ab6
+  aStar2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+"SPEC/AStar findWithDefault @ State _" [ALWAYS] forall @ a
+                                                       ($dOrd :: GHC.Classes.Ord MyTypes.State)
+  Data.Map.Strict.findWithDefault @ MyTypes.State @ a $dOrd
+  = AStar.$sfindWithDefault @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

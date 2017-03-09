@@ -1,7 +1,0 @@
-flags: {}
-extra-package-dbs: []
-packages:
-- '.'
-extra-deps:
-- pgm-0.1.4
-resolver: lts-7.18
